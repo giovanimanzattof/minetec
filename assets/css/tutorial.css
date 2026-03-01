@@ -4,7 +4,14 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: var(--color-gray-700);
+    background-image:
+        radial-gradient(circle at 20% 30%, rgba(138, 43, 226, 0.25), transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(186, 85, 211, 0.25), transparent 40%),
+        linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+        linear-gradient(to bottom, #2a174a 0%, #120a24 100%);
+    background-size: auto, auto, 40px 40px, 40px 40px, 100% 100%;
+    background-position: center, center, 0 0, 20px 20px, 0 0;
     height: 50vh;
     border-bottom: 6px solid var(--color-gray-100);
 }
@@ -99,6 +106,7 @@
 }
 #lista .mod:hover{
     border: 3px solid var(--color-purple-700);
+    transform: translateY(-4px);
 }
 
 #lista .mod h4{
@@ -116,8 +124,8 @@
 }
 
 #lista .mod a{
-    background-color: var(--color-green-500);
-    border: 3px solid var(--color-green-700);
+    background-color: var(--color-purple-500);
+    border: 3px solid var(--color-purple-700);
     color: var(--color-gray-100);
     font-size: 0.8rem;
     font-family: var(--font-pixel);
@@ -127,6 +135,7 @@
     text-decoration: none;
     
 }
+
 
 @media screen and (max-width: 600px) {
     .toturial{
