@@ -40,7 +40,7 @@ document.getElementById("modForm").addEventListener("submit", function (event) {
   const link = document.getElementById("link").value;
   const descricao = document.getElementById("iarea").value;
 
-  const numero = "5511999999999"; // Coloque o número aqui
+  const numero = "19983323408"; // Coloque o número aqui
 
   const mensagem = `*Novo Mod Enviado*%0A%0A` +
     `📌 Nome: ${encodeURIComponent(nome)}%0A` +
