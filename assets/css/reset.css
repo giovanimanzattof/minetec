@@ -18,10 +18,42 @@
     --font-pixel: 'Press Start 2P', cursive;
 }
 
-.page{
+.page {
     display: none;
 }
 
-.active-page{
+.active-page {
     display: block;
+}
+
+.floating-icon {
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0.2;
+    animation: float 6s ease-in-out infinite;
+}
+
+.icon-left {
+    left: 10%;
+    top: 30%;
+}
+
+.icon-right {
+    right: 10%;
+    top: 40%;
+    animation-delay: 3s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }

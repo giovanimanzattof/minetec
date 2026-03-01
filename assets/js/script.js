@@ -32,6 +32,3 @@ menuBar.addEventListener('mousemove', () => {
   menu.classList.toggle('active');
 });
 
-
-
-
