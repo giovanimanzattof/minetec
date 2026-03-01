@@ -33,22 +33,5 @@ menuBar.addEventListener('mousemove', () => {
 });
 
 
-document.getElementById("modForm").addEventListener("submit", function (event) {
-  event.preventDefault();
 
-  const nome = document.getElementById("itexto").value;
-  const link = document.getElementById("link").value;
-  const descricao = document.getElementById("iarea").value;
 
-  const numero = "19983323408"; // Coloque o número aqui
-
-  const mensagem = `*Novo Mod Enviado*%0A%0A` +
-    `📌 Nome: ${encodeURIComponent(nome)}%0A` +
-    `🔗 Link: ${encodeURIComponent(link)}%0A` +
-    `📝 Descrição: ${encodeURIComponent(descricao)}`;
-
-  const url = `https://wa.me/${numero}?text=${mensagem}`;
-
-  window.open(url, "_blank");
-
-});
