@@ -81,38 +81,7 @@ form button:hover{
     background-color: var(--color-purple-700);
 }
 
-.duvidas{
-    display: flex;
-    flex-direction: column;
-    color: var(--color-gray-100);   
-    gap: 2rem;
-    transition: 0.3s ease-in-out;
-}
-.duvidas details{
-    border: 3px solid var(--color-gray-100);
-    padding: 20px 40px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-.duvidas details:hover{
-    border: 3px solid var(--color-purple-700);
-}
 
-.duvidas details summary{
-    font-size: 1rem;
-    font-family: var(--font-pixel);
-    list-style: none;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-.duvidas details p{
-    font-size: 1.1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    list-style: none;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    margin: 20px;
-}
 
 .grupo{
     display: flex;
@@ -145,6 +114,57 @@ form button:hover{
 }
 .grupo button:hover{
     background-color: var(--color-purple-700);
+}
+.duvida{
+    background-color: var(--color-black);
+    height: 100vh;
+    
+}
+
+.duvidas{
+  max-width:700px;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.faq{
+  border-radius:8px;
+  background:#1e1e1e;
+  margin-bottom:10px;
+  overflow:hidden;
+}
+
+.faq-pergunta{
+  width:100%;
+  padding:15px;
+  font-size:18px;
+  font-weight:bold;
+  background:none;
+  border: 2px solid var(--color-purple-700);
+  color:white;
+  text-align:left;
+  cursor:pointer;
+}
+
+.faq-pergunta:hover{
+  background:#2a2a2a;
+}
+
+.faq-resposta{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height 0.4s ease;
+  padding:0 15px;
+  border: 2px solid var(--color-purple-700);
+}
+
+.faq-resposta p{
+  margin:15px 0;
+  color:#ddd;
+  
 }
 @media screen and (max-width: 600px) {
     .formulario section h2{
