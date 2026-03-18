@@ -6,8 +6,14 @@
 
 .staff section{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 100vh;
+}
+
+.staff h2{
+    width: 500px;
+    letter-spacing: 2px;
+    color: rgb(226, 226, 226);
+    font-family: var(--font-pixel);
 }

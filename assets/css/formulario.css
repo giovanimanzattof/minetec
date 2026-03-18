@@ -129,6 +129,13 @@ form button:hover{
   justify-content: center;
   height: 100vh;
 }
+.duvidas h2{
+    text-align: center;
+    font-size: 27px;
+    font-family: var(--font-pixel);
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
 
 .faq{
   border-radius:8px;

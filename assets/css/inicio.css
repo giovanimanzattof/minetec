@@ -3,7 +3,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
-    background-color: var(--color-black);
+    background: url(../img/obss.jpg);
+    background-position: center center;
+    background-size: contain;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
